@@ -1,0 +1,12 @@
+export 'package:flutter_rafood/screens/auth/login.dart';
+export 'package:flutter_rafood/screens/auth/registro.dart';
+export 'package:flutter_rafood/screens/comida/pantalla_comida.dart';
+export 'package:flutter_rafood/screens/perfil/pantalla_perfil.dart';
+export 'package:flutter_rafood/screens/tiendas/pantalla_tiendas.dart';
+export 'package:flutter_rafood/screens/auth/verificacion_aut.dart';
+export 'package:flutter_rafood/screens/alert_screen.dart';
+export 'package:flutter_rafood/screens/card_screen.dart';
+export 'package:flutter_rafood/screens/listv1_screen.dart';
+export 'package:flutter_rafood/screens/comida_screen.dart';
+export 'package:flutter_rafood/screens/principal_screen.dart';
+export 'package:flutter_rafood/screens/config_screen.dart';
