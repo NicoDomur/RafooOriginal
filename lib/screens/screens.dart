@@ -1,6 +1,6 @@
 export 'package:flutter_rafood/screens/auth/login.dart';
 export 'package:flutter_rafood/screens/auth/registro.dart';
-export 'package:flutter_rafood/screens/comida/pantalla_comida.dart';
+export 'package:flutter_rafood/screens/pantalla_comida.dart';
 export 'package:flutter_rafood/screens/perfil/pantalla_perfil.dart';
 export 'package:flutter_rafood/screens/tiendas/pantalla_tiendas.dart';
 export 'package:flutter_rafood/screens/auth/verificacion_aut.dart';

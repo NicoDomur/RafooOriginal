@@ -10,8 +10,9 @@ class TarjetaPersonalizableComida extends StatelessWidget {
     required this.imagenComida,
     required this.id,
     required this.precio,
-    required this.ubicacion,
     required this.categoria,
+    required this.rutaImg,
+    required this.llaveIdTiendas,
   });
 
   final int id;
@@ -19,8 +20,9 @@ class TarjetaPersonalizableComida extends StatelessWidget {
   final String descripcion;
   final String imagenComida;
   final int precio;
-  final String ubicacion;
   final String categoria;
+  final String rutaImg;
+  final int llaveIdTiendas;
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +34,9 @@ class TarjetaPersonalizableComida extends StatelessWidget {
             leading: ClipRRect(
               borderRadius: BorderRadius.circular(15),
               child: Image.network(
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/640px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg',
+                rutaImg,
                 fit: BoxFit.cover,
+                width: 100,
               ),
             ),
             title: Text(titulo),
@@ -69,8 +72,7 @@ class TarjetaPersonalizableComida extends StatelessWidget {
                   descComida: descripcion,
                   nombreComida: titulo,
                   precio: precio,
-                  ubicacion: ubicacion,
-                  imagenComida: imagenComida,
+                  rutaImg: rutaImg,
                 ));
         Navigator.push(context, ruta);
       },

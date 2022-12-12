@@ -37,19 +37,9 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
       ],
     ),
     */
-    Column(
-      children: const [
-        SizedBox(height: 10),
-        Expanded(
-          child: SingleChildScrollView(
-            child: PantallaTiendas(),
-          ),
-        ),
-        SizedBox(height: 10),
-      ],
-    ),
+    const PantallaTiendas(),
     //const PantallaTiendas(),
-    const PantallaComida(),
+    const PantallaTiendas(),
     const PantallaPerfil(),
   ];
 

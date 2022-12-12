@@ -3,24 +3,22 @@ import 'package:flutter_rafood/theme/tema_aplicacion.dart';
 import 'package:flutter_rafood/widgets/widgets.dart';
 
 class ComidaScreen extends StatefulWidget {
-  const ComidaScreen(
-      {Key? key,
-      required this.id,
-      required this.nombreComida,
-      required this.descComida,
-      required this.precio,
-      required this.ubicacion,
-      required this.categoria,
-      required this.imagenComida})
-      : super(key: key);
+  const ComidaScreen({
+    Key? key,
+    required this.id,
+    required this.nombreComida,
+    required this.descComida,
+    required this.precio,
+    required this.categoria,
+    required this.rutaImg,
+  }) : super(key: key);
 
   final int id;
   final String nombreComida;
   final String descComida;
   final int precio;
-  final String ubicacion;
   final String categoria;
-  final String imagenComida;
+  final String rutaImg;
 
   @override
   State<ComidaScreen> createState() => _ComidaScreenState();
@@ -55,12 +53,10 @@ class _ComidaScreenState extends State<ComidaScreen> {
           TarjetaPersonalizableComida2(
             titulo: widget.nombreComida,
             descripcion: widget.descComida,
-            imagenComida:
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/640px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg',
             categoria: widget.categoria,
             id: widget.id,
             precio: widget.precio,
-            ubicacion: widget.ubicacion,
+            rutaImg: widget.rutaImg,
           ),
         ],
       ),

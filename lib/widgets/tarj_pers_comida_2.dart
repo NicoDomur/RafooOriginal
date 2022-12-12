@@ -6,9 +6,8 @@ class TarjetaPersonalizableComida2 extends StatelessWidget {
       required this.titulo,
       required this.descripcion,
       required this.id,
-      required this.imagenComida,
+      required this.rutaImg,
       required this.precio,
-      required this.ubicacion,
       required this.categoria});
 
   /*
@@ -19,9 +18,8 @@ class TarjetaPersonalizableComida2 extends StatelessWidget {
   final int id;
   final String titulo;
   final String descripcion;
-  final String imagenComida;
+  final String rutaImg;
   final int precio;
-  final String ubicacion;
   final String categoria;
 
   @override
@@ -29,10 +27,10 @@ class TarjetaPersonalizableComida2 extends StatelessWidget {
     return Card(
       child: Column(children: [
         FadeInImage(
-          image: NetworkImage(imagenComida),
+          image: NetworkImage(rutaImg),
           placeholder: const AssetImage('assets/img/gifCargaImg.gif'),
           width: double.infinity,
-          height: 100,
+          height: 200,
           fit: BoxFit.cover,
         ),
         ListTile(
@@ -50,7 +48,6 @@ class TarjetaPersonalizableComida2 extends StatelessWidget {
               const SizedBox(height: 5),
               Text('Costo: \$$precio MXN'),
               const SizedBox(height: 5),
-              Text('Ubicación: $ubicacion'),
             ],
           ),
           contentPadding:

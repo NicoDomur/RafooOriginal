@@ -19,10 +19,10 @@ class IconoTexto extends StatelessWidget {
         Icon(
           icono,
           color: colorIcono,
-          size: Dimensiones.tamIcono24,
+          size: 15,
         ),
         const SizedBox(width: 5),
-        TextoChico(texto: texto),
+        TextoChico(texto: texto, tamanio: 10),
       ],
     );
   }
