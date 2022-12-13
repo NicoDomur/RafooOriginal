@@ -12,6 +12,7 @@ class TemaAplicacion {
     appBarTheme: const AppBarTheme(
       color: primarioDark,
       elevation: 0,
+      surfaceTintColor: Colors.black,
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: primarioDark,
@@ -52,9 +53,10 @@ class TemaAplicacion {
     colorScheme: const ColorScheme.light(onSurface: Colors.white),
     primaryColor: secundariolight,
     appBarTheme: const AppBarTheme(
-      color: Colors.white,
+      backgroundColor: Colors.white,
       iconTheme: IconThemeData(color: primarioLight),
       foregroundColor: primarioLight,
+      surfaceTintColor: Colors.white,
       elevation: 0,
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(

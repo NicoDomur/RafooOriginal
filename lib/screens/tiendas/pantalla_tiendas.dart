@@ -62,7 +62,7 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                       right: Dimensiones.ancho10,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      color: Colors.transparent,
                       borderRadius: BorderRadius.circular(Dimensiones.radio15),
                     ),
                     child: Row(
@@ -74,7 +74,7 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                           decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.circular(Dimensiones.radio15),
-                            color: Colors.white24,
+                            color: Colors.transparent,
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               image: NetworkImage(
