@@ -13,6 +13,7 @@ class TarjetaPersonalizableComida extends StatelessWidget {
     required this.categoria,
     required this.rutaImg,
     required this.llaveIdTiendas,
+    required this.idTienda,
   });
 
   final int id;
@@ -23,6 +24,7 @@ class TarjetaPersonalizableComida extends StatelessWidget {
   final String categoria;
   final String rutaImg;
   final int llaveIdTiendas;
+  final int idTienda;
 
   @override
   Widget build(BuildContext context) {
@@ -73,6 +75,7 @@ class TarjetaPersonalizableComida extends StatelessWidget {
                   nombreComida: titulo,
                   precio: precio,
                   rutaImg: rutaImg,
+                  numTienda: idTienda,
                 ));
         Navigator.push(context, ruta);
       },

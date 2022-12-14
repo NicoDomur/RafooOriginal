@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rafood/models/models.dart';
+import 'package:flutter_rafood/screens/pedidos/pantalla_pedidos.dart';
 import 'package:flutter_rafood/screens/screens.dart';
 
 class AppRoutes {
@@ -58,6 +59,16 @@ class AppRoutes {
         nombreRuta: 'Pantalla Tiendas',
         screen: const PantallaTiendas(),
         icono: Icons.shopping_basket_rounded),
+    MenuOpciones(
+        ruta: 'pedidos',
+        nombreRuta: 'Pantalla Pedidos',
+        screen: const PantallaPedidos(),
+        icono: Icons.shopping_basket_rounded),
+    MenuOpciones(
+        ruta: 'principal',
+        nombreRuta: 'Pantalla Principal',
+        screen: const PrincipalScreen(),
+        icono: Icons.android_rounded),
   ];
 //Lo de arriba, es lo mismo de abajo, pero con propiedades.
 /*

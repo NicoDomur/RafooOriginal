@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rafood/routes/app_routes.dart';
+import 'package:flutter_rafood/screens/pedidos/pantalla_pedidos.dart';
 import 'package:flutter_rafood/screens/screens.dart';
 import 'package:flutter_rafood/widgets/widgets.dart';
 import '../share_preferences/preferences.dart';
@@ -39,7 +40,7 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
     */
     const PantallaTiendas(),
     //const PantallaTiendas(),
-    const PantallaTiendas(),
+    const PantallaPedidos(),
     const PantallaPerfil(),
   ];
 

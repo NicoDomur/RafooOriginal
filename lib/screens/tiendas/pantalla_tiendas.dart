@@ -62,7 +62,7 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                       right: Dimensiones.ancho10,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.transparent,
+                      color: Colors.grey.shade100,
                       borderRadius: BorderRadius.circular(Dimensiones.radio15),
                     ),
                     child: Row(
@@ -89,7 +89,8 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                           ),
                           width: 205,
                           height: 90,
-                          decoration: const BoxDecoration(color: Colors.white),
+                          decoration:
+                              const BoxDecoration(color: Colors.transparent),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -137,7 +138,7 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
             child: Text("Error al traer los datos"),
           );
         }
-        return const CircularProgressIndicator();
+        return const Center(child: CircularProgressIndicator());
       },
     );
   }

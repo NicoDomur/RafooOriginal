@@ -41,6 +41,7 @@ class _PantallaComidaState extends State<PantallaComida> {
                   precio: snapshot.data![index].precio,
                   llaveIdTiendas: snapshot.data![index].llaveIdTiendas,
                   rutaImg: snapshot.data![index].rutaImg,
+                  idTienda: _numTienda,
                 );
               },
             );
@@ -49,7 +50,7 @@ class _PantallaComidaState extends State<PantallaComida> {
               child: Text("Error al traer los datos"),
             );
           }
-          return const CircularProgressIndicator();
+          return const Center(child: CircularProgressIndicator());
         },
       ),
     );
