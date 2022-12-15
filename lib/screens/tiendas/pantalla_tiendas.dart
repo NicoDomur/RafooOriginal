@@ -234,7 +234,7 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                   left: Dimensiones.ancho15,
                   right: Dimensiones.ancho15,
                 ),
-                child: const AppColumna(
+                child: AppColumna(
                   texto: 'Prueba de texto',
                 ),
               ),

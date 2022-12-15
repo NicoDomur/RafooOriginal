@@ -8,7 +8,7 @@ class Autenticacion extends ChangeNotifier {
   final String _baseUrl = 'identitytoolkit.googleapis.com';
   final String _firebaseToken = 'AIzaSyCvYi5CSb2pxKqj5eMnYnnnaZo7HA5LX5U';
 
-  final storage = FlutterSecureStorage();
+  final storage = const FlutterSecureStorage();
 
   Future<String?> crearUsuario(String correo, String contrasena) async {
     final Map<String, dynamic> datosAuth = {

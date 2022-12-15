@@ -7,14 +7,25 @@ import 'package:flutter_rafood/widgets/widget_texto_grande.dart';
 
 class AppColumna extends StatelessWidget {
   final String texto;
-  const AppColumna({Key? key, required this.texto}) : super(key: key);
+  int cantidad;
+  String fechaEntrega;
+  int costoTotal;
+  String comentarioExtra;
+  AppColumna({
+    super.key,
+    required this.texto,
+    this.fechaEntrega = 'Sin especificar',
+    this.costoTotal = 0,
+    this.cantidad = 0,
+    this.comentarioExtra = 'SC',
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TextoGrande(texto: texto, tamanio: Dimensiones.fuente24),
+        TextoGrande(texto: texto, tamanio: Dimensiones.fuente18),
         SizedBox(height: Dimensiones.alto10),
         Row(
           children: [
@@ -30,14 +41,35 @@ class AppColumna extends StatelessWidget {
             TextoChico(texto: 'Califiacion'),
           ],
         ),
-        SizedBox(height: Dimensiones.alto20),
+        SizedBox(height: Dimensiones.alto10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
+          children: [
             IconoTexto(
-                icono: Icons.check_circle,
-                texto: 'Disponible',
-                colorIcono: Colors.green),
+                icono: Icons.details_rounded,
+                texto: '\$$costoTotal, $cantidad producto(s)',
+                colorIcono: Colors.purple),
+          ],
+        ),
+        SizedBox(height: Dimensiones.alto10),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconoTexto(
+                icono: Icons.calendar_month_rounded,
+                texto:
+                    '${fechaEntrega.split('T')[0]} - ${fechaEntrega.split('T')[1].substring(0, 5)}',
+                colorIcono: Colors.red),
+          ],
+        ),
+        SizedBox(height: Dimensiones.alto10),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconoTexto(
+                icono: Icons.comment_rounded,
+                texto: 'Comentarios: $comentarioExtra',
+                colorIcono: Colors.cyan),
           ],
         ),
       ],

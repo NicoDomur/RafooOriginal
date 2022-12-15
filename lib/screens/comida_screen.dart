@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_rafood/screens/screens.dart';
+import 'package:flutter_rafood/share_preferences/preferences.dart';
 import 'package:flutter_rafood/theme/tema_aplicacion.dart';
 import 'package:flutter_rafood/widgets/widget_texto_grande.dart';
 import 'package:flutter_rafood/widgets/widgets.dart';
@@ -245,7 +246,8 @@ class _ComidaScreenState extends State<ComidaScreen> {
         'id_tienda': numTienda,
         'idComida': idComida,
         'cantidad': cantidad,
-        'precio_total': precTot
+        'precio_total': precTot,
+        'nombre_usuario': Preferences.name,
       }),
     );
   }
