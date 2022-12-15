@@ -41,6 +41,12 @@ dependencies:
   flutter_secure_storage: ^6.1.0
   get: ^4.6.5
   dots_indicator: ^2.1.0
+  flutter_launcher_icons: "^0.11.0"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/Dios2.png"
 
 dev_dependencies:
   flutter_test:
