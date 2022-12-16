@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter_rafood/theme/tema_aplicacion.dart';
 import 'package:flutter_rafood/widgets/tarj_pers_comida.dart';
 import 'package:http/http.dart' as http;
 
@@ -22,7 +23,9 @@ class _PantallaComidaState extends State<PantallaComida> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Tienda')),
+      appBar: AppBar(
+        title: const Text('Tienda'),
+      ),
       body: FutureBuilder<List<Comida>>(
         future: comidas,
         builder: (context, snapshot) {

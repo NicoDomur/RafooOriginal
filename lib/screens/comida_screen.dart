@@ -102,6 +102,7 @@ class _ComidaScreenState extends State<ComidaScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Detalles"),
+        leading: const BackButton(color: TemaAplicacion.fab),
       ),
       //como no utilizo las variables de abajo puedo reemplazar por guiones bajos
       body: ListView(

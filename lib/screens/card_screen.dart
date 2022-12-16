@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rafood/theme/tema_aplicacion.dart';
 import 'package:flutter_rafood/widgets/widgets.dart';
 
 class CardScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class CardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Rafood"),
+        leading: const BackButton(color: TemaAplicacion.fab),
       ),
       body: ListView(
         children: const [
