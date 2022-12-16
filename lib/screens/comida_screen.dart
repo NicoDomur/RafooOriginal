@@ -219,9 +219,6 @@ class _ComidaScreenState extends State<ComidaScreen> {
   DateTime obtHoraEntrega() {
     var timestamp = DateTime.now().millisecondsSinceEpoch + 1500000;
     final DateTime horaEntrega = DateTime.fromMillisecondsSinceEpoch(timestamp);
-    //print(timestamp2);
-    //print(date2);
-    //DateTime horaEntrega = DateTime.parse('1969-07-20 20:15:00Z');
     return horaEntrega;
   }
 

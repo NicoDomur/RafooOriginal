@@ -43,6 +43,11 @@ class TemaAplicacion {
         borderRadius: BorderRadius.circular(15),
       ),
     ),
+    inputDecorationTheme: const InputDecorationTheme(
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primarioLight),
+      ),
+    ),
     scaffoldBackgroundColor: primarioDark,
   );
 
@@ -86,6 +91,12 @@ class TemaAplicacion {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(25.0),
+        borderSide: const BorderSide(color: primarioLight),
       ),
     ),
     scaffoldBackgroundColor: Colors.white,

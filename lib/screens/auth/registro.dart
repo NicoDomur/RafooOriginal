@@ -116,7 +116,6 @@ class _LoginForm extends StatelessWidget {
                       if (res == null) {
                         Navigator.pushReplacementNamed(context, 'principal');
                       } else {
-                        print(res);
                         loginForm.isLoading = false;
                       }
                     },

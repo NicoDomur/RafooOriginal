@@ -110,7 +110,6 @@ class _PantallaPedidosState extends State<PantallaPedidos> {
 
   Future<List<Pedidos>> obtenerPedidos() async {
     try {
-      print(url);
       final res = await http.get(url);
       final lista = List.from(jsonDecode(res.body));
 
@@ -119,7 +118,6 @@ class _PantallaPedidosState extends State<PantallaPedidos> {
         final Pedidos pedidos = Pedidos.fromJson(element);
         pedidoss.add(pedidos);
       }
-      print(pedidoss);
       return pedidoss;
     } catch (e) {
       return [];

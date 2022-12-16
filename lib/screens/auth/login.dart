@@ -61,7 +61,7 @@ class _LoginForm extends StatelessWidget {
             autocorrect: false,
             keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(
-              hintText: 'john.doe@gmail.com',
+              hintText: 'correo@gmail.com',
               labelText: 'Correo electrónico',
               prefixIcon: Icon(Icons.alternate_email_rounded),
             ),
@@ -73,7 +73,7 @@ class _LoginForm extends StatelessWidget {
 
               return regExp.hasMatch(value ?? '')
                   ? null
-                  : 'El valor ingresado no luce como un correo';
+                  : 'No parece ser un correo';
             },
           ),
           const SizedBox(height: 30),
@@ -82,7 +82,7 @@ class _LoginForm extends StatelessWidget {
             obscureText: true,
             keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(
-              hintText: '*****',
+              hintText: '********',
               labelText: 'Contraseña',
               prefixIcon: Icon(Icons.lock_outline),
             ),
@@ -117,7 +117,6 @@ class _LoginForm extends StatelessWidget {
                     if (res == null) {
                       Navigator.pushReplacementNamed(context, 'principal');
                     } else {
-                      //print(res);
                       Notificacion.showSnackbar(res);
                       loginForm.isLoading = false;
                     }

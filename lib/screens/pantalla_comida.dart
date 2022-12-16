@@ -27,11 +27,9 @@ class _PantallaComidaState extends State<PantallaComida> {
         future: comidas,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            //print(snapshot.data);
             return ListView.builder(
               itemCount: snapshot.data!.length,
               itemBuilder: (context, index) {
-                //return Text(snapshot.data![index].nomComida);
                 return TarjetaPersonalizableComida(
                   id: snapshot.data![index].id,
                   titulo: snapshot.data![index].nomComida,
