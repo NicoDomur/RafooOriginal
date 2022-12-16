@@ -25,6 +25,7 @@ class _PantallaComidaState extends State<PantallaComida> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Tienda'),
+        leading: const BackButton(color: TemaAplicacion.fab),
       ),
       body: FutureBuilder<List<Comida>>(
         future: comidas,

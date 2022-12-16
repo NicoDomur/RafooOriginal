@@ -17,6 +17,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Configuración'),
+          leading: const BackButton(color: TemaAplicacion.fab),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),

@@ -58,7 +58,6 @@ class _PantallaTiendasState extends State<PantallaTiendas> {
                     width: 300,
                     height: 110,
                     padding: EdgeInsets.only(
-                      left: Dimensiones.ancho10,
                       right: Dimensiones.ancho10,
                     ),
                     decoration: BoxDecoration(
